@@ -24,4 +24,4 @@ min_number = int(input('Введите минимум :'))
 max_number = int(input('Введите максимум :'))
 for i in range(len(items)):
     if min_number <= items[i] <= max_number:
-        print(i+1)  
+        print(i+1)  #так как начинает считать с 0
