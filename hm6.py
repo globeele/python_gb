@@ -3,11 +3,11 @@
 #Формула для получения n-го члена прогрессии: an = a1 + (n-1) * d.
 #Каждое число вводится с новой строки.
 
-a1 = int(input())
-n = int(input())
-d = int(input())
-for i in range(n):
-    print('an = ', a1 + i * d)
+# a1 = int(input('Введите а1 :'))
+# n = int(input('Введите n :'))
+# d = int(input('Введите d :'))
+# for i in range(n):
+#     print('an = ', a1 + i * d)
 
 
 
@@ -16,9 +16,12 @@ for i in range(n):
 #принадлежат заданному диапазону (т.е. не меньше заданного минимума и
 #не больше заданного максимума).
 
-list_1 = [-5, 9, 0, 3, -1, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
-min_number = int(input())
-max_number = int(input())
-for i in range(len(list_1)):
-    if min_number <= list_1[i] <= max_number:
-        print(i)
+import random
+number = int(input('Введите количество элементов массива :'))
+items = [random.randint(1, 100) for i in range(number)]
+print(items) 
+min_number = int(input('Введите минимум :'))
+max_number = int(input('Введите максимум :'))
+for i in range(len(items)):
+    if min_number <= items[i] <= max_number:
+        print(i+1)  
